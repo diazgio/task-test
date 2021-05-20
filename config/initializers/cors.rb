@@ -3,7 +3,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     origins '*'
 
     resource '*',
-      hearders: :any
+      hearders: :any,
       methods: [:get]
   end
 end
